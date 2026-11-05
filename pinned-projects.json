@@ -3,29 +3,29 @@
   "login": "idy",
   "repositories": [
     {
-      "name": "embed-zig/embed-zig",
-      "url": "https://github.com/embed-zig/embed-zig"
-    },
-    {
-      "name": "embed-zig/esp-zig-bootstrap",
-      "url": "https://github.com/embed-zig/esp-zig-bootstrap"
-    },
-    {
       "name": "GizClaw/gizclaw",
       "url": "https://github.com/GizClaw/gizclaw"
     },
     {
-      "name": "GizClaw/doubao-speech-go",
-      "url": "https://github.com/GizClaw/doubao-speech-go"
+      "name": "GizClaw/gizos",
+      "url": "https://github.com/GizClaw/gizos"
     },
     {
-      "name": "GizClaw/minimax-go",
-      "url": "https://github.com/GizClaw/minimax-go"
+      "name": "idy/ch348-macos",
+      "url": "https://github.com/idy/ch348-macos"
     },
     {
-      "name": "GizClaw/dashscope-realtime-go",
-      "url": "https://github.com/GizClaw/dashscope-realtime-go"
+      "name": "idy/tailsplit",
+      "url": "https://github.com/idy/tailsplit"
+    },
+    {
+      "name": "idy/nootify",
+      "url": "https://github.com/idy/nootify"
+    },
+    {
+      "name": "idy/wgc",
+      "url": "https://github.com/idy/wgc"
     }
   ],
-  "updatedAt": "2026-11-05T17:37:38.703Z"
+  "updatedAt": "2026-11-05T19:53:30.080Z"
 }
