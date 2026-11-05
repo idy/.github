@@ -33,7 +33,7 @@ test("refresh guard retries advanced main and fails closed on GitHub or remote e
       fs.writeFileSync(output, "");
       return spawnSync("bash", [script, mode], { cwd: work, encoding: "utf8", env: {
         ...process.env, PATH: `${bin}${path.delimiter}${process.env.PATH}`, GITHUB_SHA: original,
-        GITHUB_REPOSITORY: "idy/.github", GITHUB_OUTPUT: output, FAKE_GH_LOG: log, ...extra,
+        GITHUB_REPOSITORY: "idy/idy", GITHUB_OUTPUT: output, FAKE_GH_LOG: log, ...extra,
       } });
     };
     assert.equal(run("check").status, 0);
@@ -45,7 +45,7 @@ test("refresh guard retries advanced main and fails closed on GitHub or remote e
     git("-C", work, "push", "origin", "main");
     assert.equal(run("check").status, 0);
     assert.equal(fs.readFileSync(output, "utf8"), "current=false\n");
-    assert.deepEqual(JSON.parse(fs.readFileSync(log, "utf8").trim()), ["workflow", "run", "sync-pins.yml", "--repo", "idy/.github", "--ref", "main"]);
+    assert.deepEqual(JSON.parse(fs.readFileSync(log, "utf8").trim()), ["workflow", "run", "sync-pins.yml", "--repo", "idy/idy", "--ref", "main"]);
     assert.equal(run("after-failed-push").status, 0);
     assert.notEqual(run("check", { FAKE_GH_FAILURE: "1" }).status, 0);
     assert.equal(fs.readFileSync(output, "utf8"), "");

@@ -34,7 +34,7 @@ test("publishes a new snapshot and retries without overwriting an advanced main"
     git("-C", remote, "symbolic-ref", "HEAD", "refs/heads/main");
     const run = (eventSha) => spawnSync("bash", ["scripts/publish-snapshot.sh"], { cwd: work, encoding: "utf8", env: {
       ...process.env, PATH: `${bin}${path.delimiter}${process.env.PATH}`, GITHUB_SHA: eventSha,
-      GITHUB_REPOSITORY: "idy/.github", GITHUB_OUTPUT: output, FAKE_GH_LOG: log,
+      GITHUB_REPOSITORY: "idy/idy", GITHUB_OUTPUT: output, FAKE_GH_LOG: log,
     } });
 
     const initial = git("-C", work, "rev-parse", "HEAD");
@@ -56,7 +56,7 @@ test("publishes a new snapshot and retries without overwriting an advanced main"
     fs.writeFileSync(path.join(work, "pinned-projects.json"), "new snapshot\n");
     assert.equal(run(published).status, 0);
     assert.equal(git("-C", remote, "show", "main:pinned-projects.json"), "first snapshot");
-    assert.deepEqual(JSON.parse(fs.readFileSync(log, "utf8").trim()), ["workflow", "run", "sync-pins.yml", "--repo", "idy/.github", "--ref", "main"]);
+    assert.deepEqual(JSON.parse(fs.readFileSync(log, "utf8").trim()), ["workflow", "run", "sync-pins.yml", "--repo", "idy/idy", "--ref", "main"]);
 
     git("-C", work, "remote", "set-url", "origin", path.join(root, "missing.git"));
     fs.writeFileSync(path.join(work, "pinned-projects.json"), "another snapshot\n");

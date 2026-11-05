@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f9fc" />
+    <meta name="description" content="Open-source projects by idy: Nootify, CH348 macOS, TailSplit, TailRelay, WGC, WGC NE, and the Homebrew tap. Explore the projects and their latest releases." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Open-source projects — idy.dev" />
+    <meta property="og:description" content="Open-source projects by idy: Nootify, CH348 macOS, TailSplit, TailRelay, WGC, WGC NE, and the Homebrew tap. Explore the projects and their latest releases." />
+    <meta property="og:url" content="https://idy.dev/" />
+    <title>Open-source projects — idy.dev</title>
+    <link rel="canonical" href="https://idy.dev/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script src="shared/idy.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shared/idy.css" />
+    <link rel="stylesheet" href="shared/header.css" />
+    <script src="theme.js" defer></script>
+    <script src="shared/header.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects" data-i18n="skipContent">Skip to content</a>
+    <header class="idy-header compact-header">
+      <div class="idy-header-inner">
+        <a class="idy-home" href="https://idy.dev/">idy.dev</a>
+        <nav class="idy-nav" aria-label="Main navigation" data-i18n-aria-label="navigation">
+          <a href="#projects" data-i18n="allProjects">All projects</a>
+          <a href="https://github.com/idy">GitHub</a>
+        </nav>
+        <details class="idy-mobile">
+          <summary aria-label="Main navigation" data-i18n-aria-label="navigation"><i class="ph ph-list" aria-hidden="true"></i></summary>
+          <nav class="idy-mobile-panel" aria-label="Main navigation" data-i18n-aria-label="navigation">
+            <a href="#projects" data-i18n="allProjects">All projects</a>
+            <a href="https://github.com/idy">GitHub</a>
+          </nav>
+        </details>
+        <div class="header-actions">
+          <div class="idy-preferences">
+            <label><span data-i18n="language">Language</span><select data-idy-language><option value="auto" data-i18n="automatic">Auto</option><option value="en">English</option><option value="zh">中文</option></select></label>
+            <label><span data-i18n="theme">Theme</span><select data-idy-theme><option value="system" data-i18n="system">System</option><option value="light" data-i18n="light">Light</option><option value="dark" data-i18n="dark">Dark</option></select></label>
+          </div>
+          <a class="idy-action" href="https://github.com/idy" target="_blank" rel="noopener noreferrer" aria-label="Follow idy on GitHub (opens in a new tab)" data-i18n-aria-label="followLabel"><span class="idy-action-pill"><i class="ph ph-github-logo" aria-hidden="true"></i><span>follow</span></span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page" id="projects">
+      <div class="directory-intro">
+        <h1 data-i18n="heading">Open-source projects</h1>
+        <p class="intro" data-i18n="intro">A few projects I maintain for macOS, serial devices, and networking.</p>
+      </div>
+      <article class="project" aria-labelledby="nootify-title" data-repository="idy/nootify">
+        <h2 id="nootify-title">Nootify</h2>
+        <p data-i18n="nootifyDescription">Follow Claude Code, Codex, and OpenCode in Feishu, then send replies back to the existing sessions on your Mac. A native menu-bar app with local routing logs and GitHub pull-request queues.</p>
+        <p class="project-links">
+          <a href="https://nootify.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/nootify" data-i18n="source">Source</a>
+          <a href="https://github.com/idy/nootify#agents-and-feishu-updates" data-i18n="setupGuide">Setup guide</a>
+          <a href="https://github.com/idy/homebrew#install" data-i18n="homebrewInstall">Homebrew</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/nootify/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="ch348-title" data-repository="idy/ch348-macos">
+        <h2 id="ch348-title">CH348 macOS</h2>
+        <p data-i18n="ch348Description">Native macOS serial ports for WCH CH348 eight-port USB-to-UART adapters, using DriverKit. Communication has been verified on all eight channels; broader compatibility testing is ongoing.</p>
+        <p class="project-links">
+          <a href="https://ch343-macos.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/ch348-macos" data-i18n="source">Source</a>
+          <a href="https://github.com/idy/ch348-macos/blob/main/VALIDATION.md" data-i18n="testResults">Test results</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/ch348-macos/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="tailsplit-title" data-repository="idy/tailsplit">
+        <h2 id="tailsplit-title">TailSplit</h2>
+        <p data-i18n="tailsplitDescription">Route traffic by domain and IP with sing-box. Desktop apps and command-line tools use YAML rules for direct connections, proxies, and Tailscale exits.</p>
+        <p class="project-links">
+          <a href="https://tailsplit.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/tailsplit" data-i18n="source">Source</a>
+          <a href="https://github.com/idy/homebrew#install" data-i18n="homebrewInstall">Homebrew</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/tailsplit/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="tailrelay-title" data-repository="idy/tailrelay">
+        <h2 id="tailrelay-title">TailRelay</h2>
+        <p data-i18n="tailrelayDescription">Runs a Tailscale exit node through a specified SOCKS5 proxy. Each instance keeps its own device identity and configuration, so several exits can share one machine. Supports Linux and macOS.</p>
+        <p class="project-links">
+          <a href="https://tailrelay.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/tailrelay" data-i18n="source">Source</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/tailrelay/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="wgc-title" data-repository="idy/wgc">
+        <h2 id="wgc-title">WGC</h2>
+        <p data-i18n="wgcDescription">A Go library for authenticated, encrypted messages using WireGuard sessions. Authorize peers by public key, bring your own transport, and exchange arbitrary application payloads.</p>
+        <p class="project-links">
+          <a href="https://wgc.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/wgc" data-i18n="source">Source</a>
+          <a href="https://pkg.go.dev/github.com/idy/wgc" data-i18n="goReference">Go reference</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/wgc/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project" aria-labelledby="wgc-ne-title" data-repository="idy/wgc-ne">
+        <h2 id="wgc-ne-title">WGC NE</h2>
+        <p data-i18n="wgcNeDescription">A Flutter plugin and Apple Network Extension SDK built on WGC and sing-box. Use standard UDP or compile your own transport into the native core; each app keeps its own signed tunnel extension.</p>
+        <p class="project-links">
+          <a href="https://wgc-ne.idy.dev/" data-i18n="projectPage">Project page</a>
+          <a href="https://github.com/idy/wgc-ne" data-i18n="source">Source</a>
+          <a href="https://github.com/idy/wgc-ne/blob/main/docs/apple-integration.md" data-i18n="integrationGuide">Integration guide</a>
+        </p>
+        <div class="project-release" aria-live="polite" aria-atomic="true">
+          <p class="release-summary"><span data-release-status>See GitHub for the latest release.</span> <a data-release-link href="https://github.com/idy/wgc-ne/releases">Releases</a></p>
+          <ul class="release-downloads" data-downloads aria-label="Downloads" data-i18n-aria-label="downloads" hidden></ul>
+          <p class="release-note" data-download-note hidden></p>
+        </div>
+      </article>
+
+      <article class="project homebrew-project" aria-labelledby="homebrew-title">
+        <h2 id="homebrew-title">Homebrew tap</h2>
+        <p data-i18n="homebrewDescription">Install Nootify and TailSplit on macOS using my Homebrew tap.</p>
+        <p class="project-links">
+          <a href="https://github.com/idy/homebrew" data-i18n="source">Source</a>
+          <a href="https://github.com/idy/homebrew#install" data-i18n="homebrewGuide">Installation guide</a>
+        </p>
+        <div class="homebrew-setup">
+          <ol class="homebrew-steps">
+            <li class="homebrew-step">
+              <p class="homebrew-step-label" data-i18n="homebrewAddTap">Add the tap</p>
+              <div class="homebrew-command-row">
+                <code class="homebrew-command">brew tap idy/homebrew https://github.com/idy/homebrew</code>
+                <button class="homebrew-copy" type="button" data-homebrew-copy data-i18n="homebrewCopy" data-i18n-aria-label="homebrewCopyTap" aria-label="Copy tap command" hidden>Copy</button>
+              </div>
+            </li>
+            <li class="homebrew-step">
+              <p class="homebrew-step-label" data-i18n="homebrewTrust">Trust the tap (Homebrew 7+)</p>
+              <div class="homebrew-command-row">
+                <code class="homebrew-command">brew trust idy/homebrew</code>
+                <button class="homebrew-copy" type="button" data-homebrew-copy data-i18n="homebrewCopy" data-i18n-aria-label="homebrewCopyTrust" aria-label="Copy trust command" hidden>Copy</button>
+              </div>
+            </li>
+            <li class="homebrew-step">
+              <p class="homebrew-step-label" data-i18n="homebrewInstallApp">Install an app</p>
+              <div class="homebrew-commands">
+                <div class="homebrew-command-row">
+                  <code class="homebrew-command">brew install --cask idy/homebrew/nootify</code>
+                  <button class="homebrew-copy" type="button" data-homebrew-copy data-i18n="homebrewCopy" data-i18n-aria-label="homebrewCopyNootify" aria-label="Copy Nootify install command" hidden>Copy</button>
+                </div>
+                <div class="homebrew-command-row">
+                  <code class="homebrew-command">brew install --cask idy/homebrew/tailsplit</code>
+                  <button class="homebrew-copy" type="button" data-homebrew-copy data-i18n="homebrewCopy" data-i18n-aria-label="homebrewCopyTailSplit" aria-label="Copy TailSplit install command" hidden>Copy</button>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <p class="homebrew-copy-status" role="status" aria-live="polite" data-homebrew-status></p>
+        </div>
+      </article>
+
+      <p class="more-projects"><a href="https://github.com/idy?tab=repositories" data-i18n="moreProjects">More projects on GitHub</a></p>
+    </main>
+
+    <footer class="idy-footer">
+      <div class="idy-footer-inner">
+        <div><a class="idy-home" href="https://idy.dev/">idy.dev</a><p data-i18n="footerNote">Independent tools. Open source.</p></div>
+        <nav aria-label="Project links" data-i18n-aria-label="projectLinks"><a href="https://idy.dev/" data-i18n="allProjects">All projects</a><a href="https://github.com/idy">GitHub</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>

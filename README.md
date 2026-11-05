@@ -1,27 +1,13 @@
-# idy GitHub configuration
+# Open-source projects
 
-This repository publishes the public repositories pinned on [idy's GitHub profile](https://github.com/idy) for display on [idy.dev](https://idy.dev/).
+I build tools for macOS, serial devices, and networking. Explore the projects and their latest releases at [idy.dev](https://idy.dev/).
 
-## Updating pinned projects
+- **[Nootify](https://nootify.idy.dev/)** — Follow Claude Code, Codex, and OpenCode sessions in Feishu and reply to them on your Mac. [Source](https://github.com/idy/nootify)
+- **[CH348 macOS](https://ch343-macos.idy.dev/)** — Native macOS serial ports for WCH CH348 eight-port USB-to-UART adapters, using DriverKit. [Source](https://github.com/idy/ch348-macos)
+- **[TailSplit](https://tailsplit.idy.dev/)** — Route traffic by domain and IP using sing-box, with support for proxies and Tailscale exits. [Source](https://github.com/idy/tailsplit)
+- **[TailRelay](https://tailrelay.idy.dev/)** — Run Tailscale exit nodes through a SOCKS5 proxy on Linux and macOS. [Source](https://github.com/idy/tailrelay)
+- **[WGC](https://wgc.idy.dev/)** — A Go library for authenticated, encrypted messages using WireGuard sessions. [Source](https://github.com/idy/wgc)
+- **[WGC NE](https://wgc-ne.idy.dev/)** — A Flutter plugin and Apple Network Extension SDK built on WGC and sing-box. [Source](https://github.com/idy/wgc-ne)
+- **[Homebrew tap](https://github.com/idy/homebrew)** — Install Nootify and TailSplit on macOS. [Installation guide](https://github.com/idy/homebrew#install)
 
-GitHub's profile pins are the source of truth. Use **Customize your pins** on the GitHub profile to choose and order up to six public repositories or gists. `pinned-projects.json` contains only public repository pins; gists and private repositories are not included.
-
-The GitHub Actions workflow checks for changes hourly and publishes a changed snapshot immediately. When pins are unchanged, it refreshes the snapshot timestamp at least daily. A manual run of **Sync pinned repositories** on `main` refreshes it sooner. GitHub's schedule and raw-content cache can delay updates; scheduled workflows in inactive public repositories can also be disabled after 60 days.
-
-The site reads the public snapshot without a token. If it cannot load or validate the snapshot, or if the snapshot is over 48 hours old, the site links to the GitHub profile instead of presenting it as current. The site allows up to five minutes of future clock skew. No GitHub API token is exposed in the site.
-
-GitHub does not document an API for editing a user's profile pins, so this workflow reads pins but does not change them. For a personal profile README, GitHub requires a public repository named `idy/idy` with a root `README.md`; a user-owned `.github` repository does not display an organization-style profile README.
-
-## Local development
-
-Install Node.js and the authenticated [GitHub CLI](https://cli.github.com/), then run:
-
-```sh
-node --test tests/*.test.mjs
-node scripts/sync-pins.mjs --check
-node scripts/sync-pins.mjs
-```
-
-The script queries GitHub GraphQL and validates the result before replacing `pinned-projects.json`. It fails without changing the snapshot if the response is incomplete, private, malformed, or unavailable. The refresh workflow uses its repository-scoped `GITHUB_TOKEN` only for tested commits on `main`; pull-request checks run separately with read-only permissions. If `main` advances while a run is queued, the refresh job requests a new run using `actions: write`. A non-fast-forward push fails rather than overwriting a newer commit.
-
-Limit repository branch-write access to trusted collaborators: a contributor who can alter workflow files on a same-repository branch may be able to request wider workflow permissions. Fork pull requests receive a read-only token.
+[More projects on GitHub](https://github.com/idy?tab=repositories) · [Repository guide](REPOSITORY.md)
