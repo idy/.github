@@ -9,10 +9,12 @@
       pageTitle: notFound ? "Page not found — idy.dev" : "Open-source projects — idy.dev",
       pageDescription: notFound
         ? "This page could not be found. Explore the open-source projects at idy.dev."
-        : "Open-source projects by idy: Nootify, CH348 macOS, TailSplit, TailRelay, WGC, WGC NE, and the Homebrew tap. Explore the projects and their latest releases.",
+        : "Open-source projects by idy: GizClaw, GizOS, Nootify, CH348 macOS, TailSplit, TailRelay, WGC, WGC NE, and the Homebrew tap. Explore the projects and their latest releases.",
       heading: "Open-source projects",
       followLabel: "Follow idy on GitHub (opens in a new tab)",
-      intro: "A few projects I maintain for macOS, serial devices, and networking.",
+      intro: "Open-source projects for connected devices, macOS, and networking.",
+      gizclawDescription: "An agent runtime and edge-server platform for connected devices, with a server, CLI, WebRTC transport, APIs, and SDKs.",
+      gizosDescription: "A portable firmware and application platform for embedded devices, desktop, mobile, and WebAssembly, with shared platform abstractions, libraries, and build tooling.",
       nootifyDescription: "Follow Claude Code, Codex, and OpenCode in Feishu, then send replies back to the existing sessions on your Mac. A native menu-bar app with local routing logs and GitHub pull-request queues.",
       setupGuide: "Setup guide", downloadNootify: "macOS Apple Silicon (.dmg)",
       ch348Description: "Native macOS serial ports for WCH CH348 eight-port USB-to-UART adapters, using DriverKit. Communication has been verified on all eight channels; broader compatibility testing is ongoing.",
@@ -48,10 +50,12 @@
       pageTitle: notFound ? "页面未找到 — idy.dev" : "开源项目 — idy.dev",
       pageDescription: notFound
         ? "未找到此页面。欢迎浏览 idy.dev 的开源项目。"
-        : "idy 的开源项目：Nootify、CH348 macOS、TailSplit、TailRelay、WGC、WGC NE 和 Homebrew tap。了解各项目，获取最新版本和下载链接。",
+        : "idy 的开源项目：GizClaw、GizOS、Nootify、CH348 macOS、TailSplit、TailRelay、WGC、WGC NE 和 Homebrew tap。了解各项目，获取最新版本和下载链接。",
       heading: "开源项目",
       followLabel: "follow — 在 GitHub 关注 idy（在新标签页打开）",
-      intro: "我维护的一些项目，涉及 macOS、串口设备和网络工具。",
+      intro: "面向联网设备、macOS 和网络应用的开源项目。",
+      gizclawDescription: "面向联网设备的智能体运行时和边缘服务器平台，提供服务器、命令行工具、WebRTC 传输、API 和 SDK。",
+      gizosDescription: "面向嵌入式设备、桌面、移动端和 WebAssembly 的可移植固件与应用平台，提供共享的平台抽象、库和构建工具。",
       nootifyDescription: "在飞书跟进 Claude Code、Codex 与 OpenCode，把回复送回 Mac 上已有的会话。原生菜单栏应用，提供本地路由日志与 GitHub PR 清单。",
       setupGuide: "设置指南", downloadNootify: "macOS Apple 芯片（.dmg）",
       ch348Description: "基于 DriverKit，为 WCH CH348 八通道 USB 转 UART 适配器提供原生 macOS 串口。八个通道均已通过通信验证，更广泛的兼容性测试仍在进行。",
@@ -86,6 +90,8 @@
   };
 
   const downloads = {
+    "GizClaw/gizclaw": [],
+    "GizClaw/gizos": [],
     "idy/nootify": [{ label: "downloadNootify", pattern: /^Nootify_.+_(?:aarch64|arm64)\.dmg$/i }],
     "idy/ch348-macos": [{ label: "downloadCH348", pattern: /^CH348-.*-macos-.*\.pkg$/i }],
     "idy/tailsplit": [

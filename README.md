@@ -1,7 +1,9 @@
 # Open-source projects
 
-I build tools for macOS, serial devices, and networking. Explore the projects and their latest releases at [idy.dev](https://idy.dev/).
+I build open-source tools for connected devices, macOS, and networking. Explore the projects and their latest releases at [idy.dev](https://idy.dev/).
 
+- **[GizClaw](https://gizclaw.github.io/gizclaw/)** — An agent runtime and edge-server platform for connected devices, with a server, CLI, WebRTC transport, APIs, and SDKs. [Source](https://github.com/GizClaw/gizclaw)
+- **[GizOS](https://github.com/GizClaw/gizos)** — A portable firmware and application platform for embedded devices, desktop, mobile, and WebAssembly.
 - **[Nootify](https://nootify.idy.dev/)** — Follow Claude Code, Codex, and OpenCode sessions in Feishu and reply to them on your Mac. [Source](https://github.com/idy/nootify)
 - **[CH348 macOS](https://ch343-macos.idy.dev/)** — Native macOS serial ports for WCH CH348 eight-port USB-to-UART adapters, using DriverKit. [Source](https://github.com/idy/ch348-macos)
 - **[TailSplit](https://tailsplit.idy.dev/)** — Route traffic by domain and IP using sing-box, with support for proxies and Tailscale exits. [Source](https://github.com/idy/tailsplit)
