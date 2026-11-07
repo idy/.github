@@ -13,4 +13,4 @@ I build open-source tools for connected devices, macOS, and networking. Explore 
 - **[WGC NE](https://wgc-ne.idy.dev/)** — A Flutter plugin and Apple Network Extension SDK built on WGC and sing-box. [Source](https://github.com/idy/wgc-ne)
 - **[Homebrew tap](https://github.com/idy/homebrew)** — Install Nootify and TailSplit on macOS. [Installation guide](https://github.com/idy/homebrew#install)
 
-[More projects on GitHub](https://github.com/idy?tab=repositories) · [Repository guide](REPOSITORY.md)
+[Discord community](https://discord.gg/TTyqQnw7yu) · [More projects on GitHub](https://github.com/idy?tab=repositories) · [Repository guide](REPOSITORY.md)
