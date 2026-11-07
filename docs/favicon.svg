@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>idy.dev</title>
+  <title>dy! — idy.dev</title>
   <rect width="64" height="64" rx="17" fill="#17243a"/>
-  <circle cx="12" cy="22" r="3" fill="#a3baff"/>
+  <circle cx="53" cy="44" r="3" fill="#a3baff"/>
   <g fill="none" stroke="#f7f9fc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 31v14"/>
-    <path d="M34.5 18.5v26.5m0-7.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/>
-    <path d="m41.5 30 6.5 14.5L54.5 30M48 44.5l-3 7"/>
+    <path d="M26 18.5v26.5m0-7.5a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/>
+    <path d="m33 30 6.5 14.5L46 30M39.5 44.5l-3 7"/>
+    <path d="M53 20v14"/>
   </g>
 </svg>
